@@ -1,0 +1,17 @@
+#alertURL {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+ 
+
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    
+}
+.valid{
+    background-color:rgb(21, 251, 5);
+}
+.invalid{
+    background-color:rgb(241, 22, 22);
+}

@@ -1,16 +1,31 @@
+// import { checkForURL } from "./URLChecker";
+
 function handleSubmit(event) {
-    event.preventDefault()
+  event.preventDefault();
 
-    // check what text was put into the form field
-    let formText = document.getElementById('name').value
-    checkForName(formText)
+  var inputURL = document.querySelectorAll("input[name=input-URL");
 
-    console.log("::: Form Submitted :::")
-    fetch('http://localhost:8080/test')
-    .then(res => res.json())
-    .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
+  // check what text was put into the form field
+
+  console.log("::: Form Submitted :::");
+
+  if (Client.checkForURL(JSON.parse(JSON.stringify(inputURL[0].value)))) {
+    console.log("Wokring your reques...");
+
+    fetch("http://localhost:5000/article", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text: inputURL[0].value }),
     })
+      .then((res) => res.json())
+      .then(function (res) {
+        document.getElementById("results").innerHTML = res;
+      });
+  } else {
+    console.log("link yaroqsiz");
+  }
 }
-
-export { handleSubmit }
+export { handleSubmit };
