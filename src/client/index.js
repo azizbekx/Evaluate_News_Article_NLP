@@ -6,8 +6,7 @@ import "./styles/base.scss";
 import "./styles/form.scss";
 import "./styles/footer.scss";
 import "./styles/header.scss";
-import "./styles/alertURL.scss"
-
+import "./styles/alertURL.scss";
 
 
 export { checkForURL, handleSubmit };

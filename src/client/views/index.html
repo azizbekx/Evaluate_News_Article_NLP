@@ -26,24 +26,74 @@
     <main>
         <section>
             <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="name" type="url" name="input-URL" value=""  placeholder="https://www.news-source/a-news-article...">
-                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="url" name="input-URL" value=""
+                    placeholder="https://www.news-source/a-news-article...">
+                <input id="submit-btn" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return Client.handleSubmit(event)">
             </form>
-            <section>
+        </section>
+        <section id="result">
+            <strong class="form-result">Form Results:</strong>
+            <div class="d-flex">
+                <p class="label-p">Text-Polarity:</p>
+                <div id="polarity"></div>
+            </div>
+            <div class="d-flex">
+                <p class="label-p">Confidence:</p>
+                <div id="polarity-confidence"></div>
+            </div>
+            <div class="d-flex">
+                <p class="label-p">Text-Subjectivity: </p>
+                <div id="subjectivity"></div>
+            </div>
+            <div class="d-flex">
+                <p class="label-p">Subjectivity Confidence: </p>
+                <div id="subjectivity-confidence"></div>
+            </div>
+            <div>
+                <p class="label-p">Text: </p>
+                <div id="text"></div>
+            </div>
 
-                <section>
-                    <strong>Form Results:</strong>
-                    <div id="results"></div>
-                </section>
+
+        </section>
     </main>
 
     <footer>
-        <p>This is aaaaaaaaaaaaaa</p>
+        <p>This is footer
+        <p>
     </footer>
-    <div id="alertURL" class="valid">
-        validURL
+    <div id="alertURL" class="valid display">
+        <p> Complete Successefully</p>
     </div>
 
+    <canvas class="background"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+       
+      window.onload = function() {
+        Particles.init({
+          selector: '.background',
+          color: '#75A5B7',
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
+        });
+      };
+    
+    </script>
     <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
@@ -52,8 +102,8 @@
                 navigator.serviceWorker.register('/service-worker.js');
             });
         }
-       </script>
-       
+    </script>
+
 </body>
 
 </html>

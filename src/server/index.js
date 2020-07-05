@@ -36,12 +36,13 @@ app.get("/test", function (req, res) {
 
 
 //Post  in "/article"
+//data get handleResponse() function in  mainRequestAPI.js 
 app.post("/article", mainRequestAPI.handleResponse)
 
 // designates what port the app will listen to for incoming requests
 
 app.listen(5000, function () {
-  console.log("Example app listening on port 5000!");
+  console.log("listening in localhost:5000!");
 });
 
 

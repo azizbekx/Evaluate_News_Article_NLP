@@ -1,17 +1,31 @@
 #alertURL {
+    
     position: fixed;
     bottom: 0;
-    left: 50%;
- 
-
-    width: 200px;
-    height: 100px;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50px;
     text-align: center;
-    
+    border-radius: 4px;
+    p{
+        color: black;
+    }
+    transition: all 0.5s linear;
+
 }
-.valid{
-    background-color:rgb(21, 251, 5);
+.display{
+    display: none !important;
 }
-.invalid{
-    background-color:rgb(241, 22, 22);
+
+.valid {
+    background-color: rgb(21, 251, 5);
+    box-shadow: 0px 1px 5px  rgba(28, 227, 94, 0.822);
+}
+
+.invalid {
+    background-color: rgb(241, 22, 22);
+    box-shadow: 0px 1px 12px 1px rgba(241, 52, 52, 0.822);
 }
