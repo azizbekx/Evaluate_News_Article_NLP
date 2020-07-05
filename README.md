@@ -94,4 +94,16 @@ var textapi = new aylien({
 
 A great step to take with your finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
  
- 
+# Result project
+
+## Jest Test
+
+[]("../../images_Readme/1.PNG")
+
+## If you enter invalid url, alert massage
+
+[]("../../images_Readme/2.PNG")
+
+## Response to Valid Url 
+
+[]("../../images_Readme/3.PNG")
