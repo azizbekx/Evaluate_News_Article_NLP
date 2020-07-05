@@ -68,16 +68,16 @@ enter link `localhost:5000`
 
 ## Jest Test
 
-![](../../images_Readme/1.PNG)
+![](images_Readme/1.PNG)
 
 # Home Page
 
-![](../../images_Reafme/4.png)
+![](images_Reafme/4.png)
 
 ## If you enter invalid url, alert massage
 
-![](../../images_Readme/2.PNG)
+![](images_Readme/2.PNG)
 
 ## Response to API 
 
-![]("../../images_Readme/3.PNG")
+![](images_Readme/3.PNG)
